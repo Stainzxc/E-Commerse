@@ -7,7 +7,11 @@ export default {
 // Dimly Blue: #e8f9fd
 // Alert/Highlight Green: #59ce8f
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        orange: '0 2px 20px 0 rgba(255,105,26,.4)', // Define the orange shadow color
+      },
+    },
   },
   plugins: [],
 }
