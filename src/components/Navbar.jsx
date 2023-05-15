@@ -18,7 +18,7 @@ export default function Navbar() {
       </div>
       {/* <h1 className="w-full text-3xl font-bold text-[#ff7d1a] ">sneaker</h1> */}
       <img src={sneakers} alt="sneakers" className="" />
-      <ul className="hidden md:flex font-sans">
+      <ul className="hidden md:flex  font-sans">
         <li className="p-4">Home</li>
         <li className="p-4">Men</li>
         <li className="p-4">Women</li>
@@ -30,13 +30,12 @@ export default function Navbar() {
         className={
           !nav
             ? "fixed top-0 left-0 w-[60%] border-r border-r-gray-200 h-full bg-[#fff] ease-in-out duration-500 md:hidden "
-            : "fixed left-[-100%] "
+            : "fixed left-[-100%]"
         }
       >
         {/* <h1 className="w-full text-3xl font-bold text-[#ff7d1a] px-4">sneaker</h1> */}
-        <div onClick={handleNav} className="flex md:hidden  cursor-all-scroll">
+        <div onClick={handleNav} className="flex md:hidden cursor-all-scroll">
           {!nav ? <img src={iconClose}  className="mt-2 mx-2 place-items-center h-[25px]"  /> : <img src={iconMenu} />}
-       
         <img src={sneakers} alt="sneakers" className="my-2" />
         </div>
         <ul className="p-4 font-bold">

@@ -1,6 +1,7 @@
 import Hero from "./components/Hero"
 import Men from "./components/Men"
 import Navbar from "./components/Navbar"
+import Women from "./components/Women"
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <Men />
+      <Women />
     </>
   )
 }

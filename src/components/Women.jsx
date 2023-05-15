@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { ShoppingCartOutlined } from "@ant-design/icons";
-import blueSneaker from "../assets/images/blueSneaker.png";
+import orangeSneaker from "../assets/images/orangeSneaker.png";
 import iconPlus from "../assets/images/iconPlus.svg";
 import iconMinus from "../assets/images/iconMinus.svg";
 
@@ -26,8 +26,8 @@ export default function Men() {
         <div className="flex justify-center items-center"
         >
         <img
-          src={blueSneaker}
-          alt="blueSneaker"
+          src={orangeSneaker}
+          alt="orangeSneaker"
           className=" w-full  
          my-4 rounded-3xl"
         />
