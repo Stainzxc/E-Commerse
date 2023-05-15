@@ -1,4 +1,5 @@
 import About from "./components/About"
+import Contact from "./components/Contact"
 import Essentials from "./components/Essentials"
 import Hero from "./components/Hero"
 import Men from "./components/Men"
@@ -16,6 +17,7 @@ function App() {
       <Women />
       <About />
       <Essentials />
+      <Contact />
     </>
   )
 }
