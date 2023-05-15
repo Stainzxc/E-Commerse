@@ -3,7 +3,7 @@ import Typed from 'react-typed';
 
 export default function Hero() {
   return (
-    <div className="text-black">
+    <div className="text-black w-full">
       <div className="max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center">
       <p className="text-[#ff7d1a] md:text-4xl text-3xl font-bold p-2">Sneaker Company</p>
       <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-4">Limited Edition Sneakers</h1>

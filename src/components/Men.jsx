@@ -21,33 +21,36 @@ export default function Men() {
   }
 
   return (
-    <div className="w-full bg-white py-16 px-4">
+    <div className="w-full bg-black py-16 px-4">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-4 py-4 h-screen">
-        <div className="flex justify-center items-center"
-        >
-        <img
-          src={blueSneaker}
-          alt="blueSneaker"
-          className=" w-full  
+        <div className="flex justify-center items-center">
+          <img
+            src={blueSneaker}
+            alt="blueSneaker"
+            className=" w-full  
          my-4 rounded-3xl"
-        />
+          />
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-[#ff7d1a] font-bold text-xl md:text-2xl uppercase flex justify-center">
-            Under Armour X Stephen Curry
+            Sneaker for Men
           </p>
-          <h1 className="font-bold text-2xl md:text-4xl py-2 flex justify-center">
-            Under Armour Curry 7 Sour Patch
+          <h1 className="font-bold text-2xl md:text-4xl py-2 flex justify-center text-white">
+            Chuck 70 OX Unisex Sneakers - Blue
           </h1>
           <div className="mx-auto">
-            <p className="">
-              Stephen Curry has enjoyed snacking on SOUR PATCH KIDS for years.
-              You know the ones. First they’re sour, then they’re sweet. They're
-              the ultimate treat when taking a timeout.
+            <p className="text-white">
+              By 1970, the Chuck Taylor All Star evolved into one of the best
+              basketball sneakers, ever. The Chuck 70 celebrates that heritage
+              by bringing together archival-inspired details with modern comfort
+              updates. OthoLite insole cushioning and winged tongue stitching
+              take the comfort level up a notch. A glossy, egret midsole and
+              vintage license plate highlight the shoe's crafted detailing,
+              right up to the premium canvas upper.
             </p>
             <div className="grid  ">
               <div className="flex place-items-center">
-                <span className="text-2xl py-2 font-bold mr-2">₱1,500</span>
+                <span className="text-2xl py-2 font-bold mr-2 text-white">₱1,500</span>
                 <p className="text-[#ff7d1a] font-bold bg-orange-100 rounded-lg px-2">
                   50%
                 </p>

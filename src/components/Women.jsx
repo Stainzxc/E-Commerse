@@ -23,37 +23,42 @@ export default function Men() {
   return (
     <div className="w-full bg-white py-16 px-4">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-4 py-4 h-screen">
-        <div className="flex justify-center items-center"
-        >
-        <img
-          src={orangeSneaker}
-          alt="orangeSneaker"
-          className=" w-full  
+        <div className="flex justify-center items-center">
+          <img
+            src={orangeSneaker}
+            alt="orangeSneaker"
+            className=" w-full  
          my-4 rounded-3xl"
-        />
+          />
         </div>
         <div className="flex flex-col justify-center">
           <p className="text-[#ff7d1a] font-bold text-xl md:text-2xl uppercase flex justify-center">
-            Under Armour X Stephen Curry
+            Sneaker for Women
           </p>
           <h1 className="font-bold text-2xl md:text-4xl py-2 flex justify-center">
-            Under Armour Curry 7 Sour Patch
+            Chuck Taylor All Star Crush Heel Sneakers - Orange
           </h1>
           <div className="mx-auto">
             <p className="">
-              Stephen Curry has enjoyed snacking on SOUR PATCH KIDS for years.
-              You know the ones. First they’re sour, then they’re sweet. They're
-              the ultimate treat when taking a timeout.
+              Part low-top sneaker, part mule - 100% essential. These versatile
+              Chucks are designed for easy, goes-with-everything style. A
+              slightly stretchy crush-back heel allows you to switch up your
+              style between classic low top and backless mule looks. Made with
+              an about 50% recycled cotton canvas upper and everyday neutrals,
+              they're a must-have for warm-weather styling.Women's low-top
+              sneaker with 12oz cotton canvas upper (about 50% recycled cotton,
+              about 50% cotton)Slightly stretchy heel for easy on and
+              offStandard woven tongue label and license plate
             </p>
             <div className="grid  ">
               <div className="flex place-items-center">
-                <span className="text-2xl py-2 font-bold mr-2">₱1,500</span>
+                <span className="text-2xl py-2 font-bold mr-2">₱1,750</span>
                 <p className="text-[#ff7d1a] font-bold bg-orange-100 rounded-lg px-2">
                   50%
                 </p>
               </div>
               <span className="font-bold text-lg text-slate-400 line-through">
-                ₱3,000
+                ₱3,500
               </span>
             </div>
 

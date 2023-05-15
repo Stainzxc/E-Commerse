@@ -11,7 +11,7 @@ export default function Navbar() {
     setNav(!nav);
   }
   return (
-    <div className="text-black flex  items-center h-24 max-w-[1240px] m-auto px-4 border-b border-slate-200 shadow-orange md:shadow-none md:border-b md:border-orange-200">
+    <div className="text-black flex  items-center h-24 max-w-[1240px] m-auto px-4 border-b border-slate-200 shadow-orange md:shadow-none md:border-b md:border-orange-200 sticky top-0 bg-white">
       <div onClick={handleNav} className="block md:hidden">
         <img src={iconMenu} alt="iconMenu" className="mr-2 " />
         {/* <AiOutlineMenu size={22} className="mr-2"/>   */}
