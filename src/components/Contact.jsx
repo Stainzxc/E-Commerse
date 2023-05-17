@@ -9,7 +9,7 @@ import {
 
 export default function Contact() {
   return (
-    <div className="w-full mx-auto text-gray-300 bg-black py-16 px-4 grid md:grid-cols-3 gap-8 h-auto ">
+    <div className="w-full mx-auto text-gray-300 bg-black py-16 px-4 grid lg:grid-cols-3 gap-8 h-auto ">
       <div className="">
         <img src={sneakers} alt="sneakers" className="" />
         <p className="mx-2">
