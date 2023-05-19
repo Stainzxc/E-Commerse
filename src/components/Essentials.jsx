@@ -4,7 +4,7 @@ import image2 from "../assets/images/image2.jpg";
 
 export default function Essentials() {
   return (
-      <div className="max-w-[1240px] mx-auto my-10  text-black bg-white">
+      <div className="max-w-[1240px] mx-auto my-10  text-black bg-white ">
         <div className="grid md:grid-cols-2 sm:grid-cols-2">
           <div className="relative">
             <img src={image1} alt="image1" className="h-auto w-full"/>
