@@ -7,6 +7,7 @@ import iconAvatar from "../assets/images/iconAvatar.png"
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { ShoppingCartOutlined, UserOutlined } from "@ant-design/icons";
 import { Avatar } from "antd";
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [nav, setNav] = useState(false);
@@ -27,6 +28,7 @@ export default function Navbar() {
           <li className="p-4">Men</li>
           <li className="p-4">Women</li>
           <li className="p-4">About</li>
+          <li className="p-4">Essentials</li>
           <li className="p-4">Contact</li>
         </ul>
         <ShoppingCartOutlined className="ml-20 mr-2" style={{ fontSize: "26px" }} />
