@@ -3,8 +3,8 @@ import {
   createProduct,
   getAllProducts,
   getProductById,
-//   updateProduct,
-//   deleteProduct,
+  updateProduct,
+  deleteProduct,
 } from "../controller/ProductController.js";
 
 const router = express.Router();
@@ -12,7 +12,7 @@ const router = express.Router();
 router.get("/", getAllProducts);
 router.get("/:id", getProductById);
 router.post("/", createProduct);
-// router.put("/:id", updateProduct);
-// router.delete("/:id", deleteProduct);
+router.put("/:id", updateProduct);
+router.delete("/:id", deleteProduct);
 
 export default router;
