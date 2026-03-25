@@ -1,17 +1,18 @@
-const express = require('express');
-const mongoose = require('mongoose');
-const cors = require('cors');
-require('dotenv').config();
+import express from 'express';
+import mongoose from 'mongoose';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import productRoutes from './routes/productRoutes.js';
+dotenv.config();
 
 const app = express();
-const productRoutes = require('./routes/productRoutes');
-
-// Routes
-app.use('/api', productRoutes);
 
 // Middleware
 app.use(cors());
 app.use(express.json());
+
+// Routes
+app.use('/api/products', productRoutes);
 
 // test route
 app.get('/', (req, res) => {
