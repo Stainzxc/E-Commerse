@@ -7,19 +7,33 @@ import Hero from "./components/Hero";
 import Men from "./components/Men";
 import Navbar from "./components/Navbar";
 import Women from "./components/Women";
-import { BrowserRouter as Route, Router } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  Router,
+  Routes,
+} from "react-router-dom";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-      <Men />
-      <Women />
-      <About />
-      <Essentials />
-      <Contact />
-    </>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Essentials />
+              <About />
+              <Contact />
+            </>
+          }
+        />
+        <Route path="/men" element={<Men/>}/>
+        <Route path="/women" element={<Women/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
