@@ -1,14 +1,10 @@
 import React from "react";
-import { useState } from "react";
-import { ShoppingCartOutlined } from "@ant-design/icons";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import orangeSneaker from "../assets/images/orangeSneaker.png";
-import iconPlus from "../assets/images/iconPlus.svg";
-import iconMinus from "../assets/images/iconMinus.svg";
-import { useEffect } from "react";
-import axios from "axios";
+import axiosInstance from "../api/axiosInstance";
 
-export default function Men() {
-  const [count, setCount] = useState(0);
+export default function Women() {
   const [products, setProducts] = useState([]);
 
   function incrementCount() {
@@ -26,7 +22,7 @@ export default function Men() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/products?category=Women");
+        const response = await axiosInstance.get("products?category=Women");
         setProducts(response.data);
       } catch (error) {
         console.error("Error fetching products:", error);
@@ -37,18 +33,21 @@ export default function Men() {
 
   console.log("products", products);
 
+  const navigate = useNavigate();
+
   return (
     <div className="w-full bg-white py-10 px-4">
       <div className="max-w-[1240px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {products.map((product) => (
           <div
             key={product._id}
+            onClick={() => navigate(`/product/${product._id}`)}
             className="bg-white hover:shadow-lg transition duration-300 rounded-lg p-2 cursor-pointer"
           >
             {/* Image */}
             <div className="bg-gray-100 rounded-lg overflow-hidden">
               <img
-                src={orangeSneaker}
+                src={product.imageUrl || orangeSneaker}
                 alt={product.name}
                 className="w-full object-cover"
               />

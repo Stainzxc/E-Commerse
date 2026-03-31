@@ -35,7 +35,7 @@ export const createProduct = async (req, res) => {
     name,
     description,
     price,
-    imageUrl,
+    imageUrl: req.file ? req.file.path : imageUrl,
     category,
   });
   try {

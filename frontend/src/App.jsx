@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import Men from "./components/Men";
 import Navbar from "./components/Navbar";
 import Women from "./components/Women";
+import ProductDetail from "./components/ProductDetail";
 import {
   BrowserRouter,
   Route,
@@ -32,6 +33,7 @@ function App() {
         />
         <Route path="/men" element={<Men/>}/>
         <Route path="/women" element={<Women/>}/>
+        <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
     </BrowserRouter>
   );

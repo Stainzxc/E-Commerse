@@ -1,26 +1,11 @@
 import React from "react";
-import { useState } from "react";
-import { ShoppingCartOutlined } from "@ant-design/icons";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import blueSneaker from "../assets/images/blueSneaker.png";
-import iconPlus from "../assets/images/iconPlus.svg";
-import iconMinus from "../assets/images/iconMinus.svg";
-import { useEffect } from "react";
 import axiosInstance from "../api/axiosInstance";
 
 export default function Men() {
-  const [count, setCount] = useState(0);
   const [products, setProducts] = useState([]);
-  function incrementCount() {
-    setCount(count + 1);
-  }
-
-  function decrementCount() {
-    {
-      count > 0
-        ? setCount((prevCount) => prevCount - 1)
-        : console.log("Cannot decrease count below 0.");
-    }
-  }
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -36,15 +21,21 @@ export default function Men() {
 
   console.log(products);
 
+  const navigate = useNavigate();
+
   return (
     <div className="w-full bg-white py-10 px-4">
       <div className="max-w-[1240px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {products.map((product) => (
-          <div key={product._id} className="bg-white hover:shadow-lg transition duration-300 rounded-lg p-2 cursor-pointer">
+          <div
+            key={product._id}
+            onClick={() => navigate(`/product/${product._id}`)}
+            className="bg-white hover:shadow-lg transition duration-300 rounded-lg p-2 cursor-pointer"
+          >
             {/* Image */}
             <div className="bg-gray-100 rounded-lg overflow-hidden">
               <img
-                src={blueSneaker}
+                src={product.imageUrl || blueSneaker}
                 alt={product.name}
                 className="w-full object-cover"
               />
