@@ -165,4 +165,4 @@ POST /api/products
 ## 📄 License
 
 This project is for learning purposes.
-I made this to enhance my knowledge in React JS, I applied my basic knowledge about flexbox and grid on how to use them properly. Also I practiced how to make it Responsive Web Design.
+SneakerPhils is a full-stack MERN e-commerce application that demonstrates product management, category-based filtering, and cloud-based image handling using Cloudinary. Built with React (Vite), Tailwind CSS, Node.js (Express), and MongoDB.
